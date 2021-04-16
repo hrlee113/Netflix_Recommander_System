@@ -32,7 +32,7 @@ def correlation_based_neighbourhood_model(mat, mat_file, l_reg2=100.0, k=250):
 
     mu = mat.data[:].mean()
 
-    # Compute similarity matrix
+    # Compute similarity matrix (shrunk matrix)
     N = sparse.csr_matrix(mat).copy()
     N.data[:] = 1
     S = sparse.csr_matrix.dot(N.T, N)
