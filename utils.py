@@ -1,4 +1,4 @@
-path = "../Datasets"
+path = "./Datasets"
 
 from itertools import groupby
 from operator import itemgetter
